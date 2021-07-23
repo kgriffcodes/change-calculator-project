@@ -3,44 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>Change Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=STIX+Two+Math&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Change Calculator!</h1>
-    <div>
-      <label for="howMuchDue">How much is due for the sale?</label>
-      <input type='number' id='howMuchDue' name='howMuchDue' step='0.01' value='0.00' placeholder='0.00'>
-      <label for="customerPaid">How much has the customer given you?</label>
-      <input type='number' id='customerPaid' name="customerPaid" step='0.01' value='0.00' placeholder='0.00'>
-      <button id="calcButton">Calculate</button>
+    <div class="contentWrap">
+      <h1>Change Calculator</h1>
+      <div class="inputWrap">
+        <div class="howMuchDueWrap inputSubSection">
+          <label for="howMuchDue">How much is due for the sale?</label>
+          <input type='number' id='amount-due' name='howMuchDue' step='0.01' value='0.00' placeholder='0.00'>
+        </div>
+        
+        <div class ="customerPaidWrap inputSubSection">
+          <label for="customerPaid">How much has the customer given you?</label>
+          <input type='number' id='amount-received' name="customerPaid" step='0.01' value='0.00' placeholder='0.00'>
+        </div>
+      </div>
+
+      <button id="calculate-change">Calculate</button>
+
+      <div class="dollarSection">
+        <p>Dollars</p>
+        <p id="dollars-output"></p>
+      </div>
+
+      <div class="changeWrap">
+        <div class="quarterSection">
+          <p>Quarters</p>
+          <p id="quarters-output"></p>
+        </div>
+
+        <div class="dimeSection">
+          <p>Dimes</p>
+          <p id="dimes-output"></p>
+        </div>
+
+        <div class="nickelSection">
+          <p>Nickels</p>
+          <p id="nickels-output"></p>
+        </div>
+
+        <div class="pennySection">
+          <p>Pennies</p>
+          <p id="pennies-output"></p>
+        </div>
+      </div>
     </div>
-
-    <div class="dollarSection">
-      <p>Dollars</p>
-      <p id="dollarAns"></p>
-    </div>
-
-    <div class="changeSection">
-      <div class="quarterSection">
-        <p>Quarters</p>
-        <p id="quarterAns"></p>
-      </div>
-
-      <div class="dimeSection">
-        <p>Dimes</p>
-        <p id="dimeAns"></p>
-      </div>
-
-      <div class="nickelSection">
-        <p>Nickels</p>
-        <p id="nickelAns"></p>
-      </div>
-
-      <div class="pennySection">
-        <p>Pennies</p>
-        <p id="pennyAns"></p>
-      </div>
-    </div>
-  
     
     <script src="main.js"></script>
   </body>

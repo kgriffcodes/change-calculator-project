@@ -1,0 +1,58 @@
+body{
+    height: 100vh;
+    font-family: 'STIX Two Math', serif;
+    font-weight: bold;
+    font-size: 62.5%;
+    background-color: #e2fab5;
+}
+
+.contentWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    font-size: 2em;
+}
+
+h1{
+    font-family: 'Russo One', sans-serif;
+    font-size: 3em;
+}
+
+.inputWrap{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    background-color: white;
+    padding: 3em;
+    border-radius: 15px;
+    border: 2px solid green;
+}
+
+.inputSubSection{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+#calculate-change{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: green;
+    padding: 0.25em 1em;
+    border-radius: 15px;
+}
+
+.changeWrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
