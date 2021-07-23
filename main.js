@@ -7,12 +7,7 @@ function calculateChangeDue(){
     let amtTendered = document.getElementById('customerPaid').value;
     let changeDue = amtTendered - totalCost;
     console.log(changeDue);
-    return changeDue;
-}
 
-var changeDue = calculateChangeDue();
-
-function displayChange(changeDue){
     let dollarsDue = Math.floor(changeDue/1);
     let coinsDue = changeDue % 1;
 
