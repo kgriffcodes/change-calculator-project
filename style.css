@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 90vh;
+    height: 70vh;
     font-size: 2em;
 }
 
@@ -34,12 +34,14 @@ h1{
 .inputSubSection{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 input{
     font-size: 1em;
     border-radius: 5px;
     padding: 0.5em;
+    width: 10em;
 }
 
 #calculate-change{

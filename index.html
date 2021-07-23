@@ -21,16 +21,17 @@
           <label for="customerPaid">How much has the customer given you?</label>
           <input type='number' id='amount-received' name="customerPaid" step='0.01' value='0.00' placeholder='0.00'>
         </div>
+
+        <button id="calculate-change">Calculate</button>
       </div>
 
-      <button id="calculate-change">Calculate</button>
-
-      <div class="dollarSection">
-        <p>Dollars</p>
-        <p id="dollars-output"></p>
-      </div>
 
       <div class="changeWrap">
+        <div class="dollarSection">
+          <p>Dollars</p>
+          <p id="dollars-output"></p>
+        </div>
+
         <div class="quarterSection">
           <p>Quarters</p>
           <p id="quarters-output"></p>

@@ -32,7 +32,7 @@ function calculateChangeDue(){
     var pennyAns = document.getElementById('pennies-output');
 
     //display answers
-    dollarAns.innerText = dollarsDue;
+    dollarAns.innerText = `$${dollarsDue}`;
     quarterAns.innerText = quartersDue;
     dimeAns.innerText = dimesDue;
     nickelAns.innerText = nickelsDue;
