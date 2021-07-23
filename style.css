@@ -58,3 +58,7 @@ input{
     flex-direction: row;
     justify-content: space-around;
 }
+
+.changeSubSection{
+    text-align: center;
+}
