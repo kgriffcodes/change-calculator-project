@@ -5,7 +5,41 @@
     <title>Change Calculator</title>
   </head>
   <body>
-    <!-- Write your markup here -->
+    <h1>Change Calculator!</h1>
+    <div>
+      <label for="howMuchDue">How much is due for the sale?</label>
+      <input type='number' id='howMuchDue' name='howMuchDue' step='0.01' value='0.00' placeholder='0.00'>
+      <label for="customerPaid">How much has the customer given you?</label>
+      <input type='number' id='customerPaid' name="customerPaid" step='0.01' value='0.00' placeholder='0.00'>
+      <button id="calcButton">Calculate</button>
+    </div>
+
+    <div class="dollarSection">
+      <p>Dollars</p>
+      <p id="dollarAns"></p>
+    </div>
+
+    <div class="changeSection">
+      <div class="quarterSection">
+        <p>Quarters</p>
+        <p id="quarterAns"></p>
+      </div>
+
+      <div class="dimeSection">
+        <p>Dimes</p>
+        <p id="dimeAns"></p>
+      </div>
+
+      <div class="nickelSection">
+        <p>Nickels</p>
+        <p id="nickelAns"></p>
+      </div>
+
+      <div class="pennySection">
+        <p>Pennies</p>
+        <p id="pennyAns"></p>
+      </div>
+    </div>
   
     
     <script src="main.js"></script>
